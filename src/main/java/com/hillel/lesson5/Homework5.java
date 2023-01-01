@@ -20,7 +20,7 @@ public class Homework5 {
         System.out.println(b);
 
 
-//        System.out.println(lenth);
+//        System.out.println(lenth)
 
     }
 }
