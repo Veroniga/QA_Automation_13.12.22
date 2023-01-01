@@ -10,6 +10,7 @@ public class Homework5 {
         System.out.println(volume);
 
         int lenth = 4 * (a + b + c);
+//        hg
         System.out.println(lenth);
 
 
