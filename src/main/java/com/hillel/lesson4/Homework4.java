@@ -9,8 +9,8 @@ public class Homework4 {
     int volume = a * b * c;
     System.out.println(volume);
 
-    int lenth = 4 * (a + b + c);
-    System.out.println(lenth);
+    int length = 4 * (a + b + c);
+    System.out.println(length);
 
 
     }
