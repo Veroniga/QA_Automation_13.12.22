@@ -2,17 +2,25 @@ package com.hillel.lesson5;
 
 public class Homework5 {
     public static void main(String[] args) {
-        int a = 7;
-        int b = 9;
-        int c = 11;
+        int warriorLi  = 13;
+        int archerLi = 24;
+        int apexLi = 46;
 
-        int volume = a * b * c;
-        System.out.println(volume);
+        int warriorMin  = 9;
+        int archerMin = 35;
+        int apexMin = 12;
 
-        int lenth = 4 * (a + b + c);
-//        hg
-        System.out.println(lenth);
+        int warriorLiNumber = 860;
+        double warriorMinNumber = warriorLiNumber * 1.5;
 
+
+        int a = warriorLiNumber * (warriorLi + archerLi + apexLi);
+        int b = (int)warriorMinNumber * (warriorMin + archerMin + apexMin);
+        System.out.println(a);
+        System.out.println(b);
+
+
+//        System.out.println(lenth);
 
     }
 }
