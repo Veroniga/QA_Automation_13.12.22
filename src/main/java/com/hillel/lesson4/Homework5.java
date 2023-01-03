@@ -1,4 +1,4 @@
-package com.hillel.lesson5;
+package com.hillel.lesson4;
 
 public class Homework5 {
     public static void main(String[] args) {
