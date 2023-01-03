@@ -13,14 +13,10 @@ public class Homework5 {
         int warriorLiNumber = 860;
         double warriorMinNumber = warriorLiNumber * 1.5;
 
-
-        int a = warriorLiNumber * (warriorLi + archerLi + apexLi);
-        int b = (int)warriorMinNumber * (warriorMin + archerMin + apexMin);
-        System.out.println(a);
-        System.out.println(b);
-
-
-//        System.out.println(lenth)
+        int attackPowerLi = warriorLiNumber * (warriorLi + archerLi + apexLi);
+        int attackPowerMin = (int)warriorMinNumber * (warriorMin + archerMin + apexMin);
+        System.out.println("Загальний показник атаки воїнів династії Лі: " + attackPowerLi);
+        System.out.println("Загальний показник атаки воїнів династії Мінь: " + attackPowerMin);
 
     }
 }
