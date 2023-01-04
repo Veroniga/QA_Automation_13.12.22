@@ -18,7 +18,7 @@ public class Homework6 {
             scanner.nextLine();
         } else {
             System.out.println("Невірне значення кількості фрагів");
-            System.exit(status: 0);
+            //System.exit(status: 0);
         }
 
         if (scanner.hasNextInt()){
