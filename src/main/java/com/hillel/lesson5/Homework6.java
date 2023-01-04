@@ -57,14 +57,13 @@ public class Homework6 {
 
 
         /* System.out.println("Введіть ім'я другої команди");
-        Scanner scanner6 = new Scanner(System.in);
-        String teamName2 = scanner6.nextLine();
+        String teamName2 = scanner.nextLine();
         System.out.println(teamName2);
 
         System.out.println("Введіть кількість фрагів для гравців другої команди");
 
-        Scanner scanner2 = new Scanner(System.in);
-        int team1player1 = scanner2.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int team1player1 = scanner.nextInt();
 
         Scanner scanner3 = new Scanner(System.in);
         int team1player3 = scanner3.nextInt();
