@@ -11,14 +11,14 @@ public class Homework6 {
 
         System.out.println("Введіть кількість фрагів для гравців першої команди");
 
-        //for (int i = 1; i <= 5; i++) {
+
 
         if (scanner.hasNextInt()){
             int team1player1 = scanner.nextInt();
             scanner.nextLine();
         } else {
             System.out.println("Невірне значення кількості фрагів");
-            //System.exit(status: 0);
+            System.exit(status: 0);
         }
 
         if (scanner.hasNextInt()){
