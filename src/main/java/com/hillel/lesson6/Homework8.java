@@ -20,7 +20,6 @@ public class Homework8 {
                 System.out.println(shuttleCounter + ": " + i);
                 shuttleCounter++;
             }
-
         }
     }
 }
