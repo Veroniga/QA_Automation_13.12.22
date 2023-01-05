@@ -9,7 +9,6 @@ public class Homework8 {
     public static void main(String[] args) {
 
         int shuttleCounter = 1;
-        //int i = 1;
 
         while (shuttleCounter <= 100) {
             for (int i = 1; i <= 999; i++) {
