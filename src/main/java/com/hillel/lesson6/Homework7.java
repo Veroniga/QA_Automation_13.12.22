@@ -10,6 +10,7 @@ public class Homework7 {
 
         int randomNumber = (int) (Math.random() * 10);
         System.out.println (randomNumber);
+
         System.out.println("Спробуйте відгадати ціле число, яке \"загадав\" комп'ютер у діапазоні від 0 до 10");
 
         for (int i = 1; i <=3; i++){
