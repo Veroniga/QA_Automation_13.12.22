@@ -16,8 +16,10 @@ public class Homework6 {
         int team2Player4 = 0;
         int team2Player5 = 0;
 
-        System.out.println("Введіть ім'я першої команди");
+
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Введіть ім'я першої команди");
         String teamName1 = scanner.nextLine();
 
         System.out.println("Введіть кількість фрагів для гравців першої команди");
