@@ -8,13 +8,13 @@ import java.util.Scanner;
 public class Homework7 {
     public static void main(String[] args) {
 
-        int randomNumber = (int) (Math.random() * 10);
-        System.out.println (randomNumber);
+        int randomNumber = (int)(Math.random() * 11);
 
         System.out.println("Спробуйте відгадати ціле число, яке \"загадав\" комп'ютер у діапазоні від 0 до 10");
 
+        Scanner scanner = new Scanner(System.in);
+
         for (int i = 1; i <=3; i++){
-            Scanner scanner = new Scanner(System.in);
             int turn = scanner.nextInt();
             scanner.nextLine();
                 if (turn > randomNumber){
