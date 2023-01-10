@@ -112,7 +112,6 @@ public class Homework6 {
         double team1Score = (double) (team1Player1 + team1Player2 + team1Player3 + team1Player4 + team1Player5) / 5;
         double team2Score = (double) (team2Player1 + team2Player2 + team2Player3 + team2Player4 + team2Player5) / 5;
 
-
     if (team1Score > team2Score){
         System.out.println("Перемогла команда " + teamName1 + " набравши " + team1Score + " очків");
     } else if (team1Score < team2Score) {
