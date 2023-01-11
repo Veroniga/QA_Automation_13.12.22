@@ -19,7 +19,6 @@ public class Homework7 {
             if(scanner.hasNextInt()) {
                 int turn = scanner.nextInt();
                 scanner.nextLine();
-
                 if (turn > randomNumber) {
                     System.out.println("Спробуйте обрати менше число");
                 } else if (turn < randomNumber) {
