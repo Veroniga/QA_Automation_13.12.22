@@ -14,19 +14,22 @@ public class Homework7 {
 
         Scanner scanner = new Scanner(System.in);
 
-        //int turn = 0;
         for (int i = 1; i <=3; i++){
+            int turn;
             if(scanner.hasNextInt()) {
-                int turn = scanner.nextInt();
+                turn = scanner.nextInt();
                 scanner.nextLine();
-
-                if (turn > randomNumber) {
-                    System.out.println("Спробуйте обрати менше число");
-                } else if (turn < randomNumber) {
-                    System.out.println("Спробуйте обрати більше число");
-                } else {
-                    System.out.println("Вітаємо! Це вірна відповідь!");
-                }
+            }
+            else {
+                System.out.println("Можна ввожити лише ціле число");
+                break;
+            }
+            if (turn > randomNumber) {
+                System.out.println("Спробуйте обрати менше число");
+            } else if (turn < randomNumber) {
+                System.out.println("Спробуйте обрати більше число");
+            } else {
+                System.out.println("Вітаємо! Це вірна відповідь!");
             }
         }
     }
