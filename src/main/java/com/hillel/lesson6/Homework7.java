@@ -29,7 +29,7 @@ public class Homework7 {
             } else if (turn < randomNumber) {
                 System.out.println("Спробуйте обрати більше число");
             } else {
-                System.out.println("Вітаємо! Це вірна відповідь!");
+                System.out.println("Вітаємо, це вірна відповідь!");
             }
         }
     }
