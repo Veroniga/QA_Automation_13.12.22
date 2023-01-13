@@ -15,7 +15,6 @@ public class Homework9 {
         int minAge = 18;
         int maxAge = 40;
 
-
         for (int i = 0; i < team1.length; i++){
             int randomAge = (int) (Math.random() * (maxAge - minAge + 1)) + minAge;
             team1[i] = randomAge;
@@ -40,20 +39,21 @@ public class Homework9 {
                 System.out.print(team2[i] + ", ");
             }
         }
+        System.out.println();
 
-//        int average = 0;
-//        for (int age : team1) {
-//            average += age;
-//        }
-//        double averageAgeTeam1 = average / team1.length;
-//        System.out.println(averageAgeTeam1);
-//
-//
-//        for (int age : team2) {
-//            average += age;
-//        }
-//        double averageAgeTeam2 = average / team2.length;
-//        System.out.println(averageAgeTeam2);
+        int ageSum1 = 0;
+        for (int age : team1) {
+            ageSum1 += age;
+        }
+        double averageAgeTeam1 = (double) ageSum1 / team1.length;
+        System.out.println("Середній вік гравців 1 команди: " + averageAgeTeam1);
+
+        int ageSum2 = 0;
+        for (int age : team2) {
+            ageSum2 += age;
+        }
+        double averageAgeTeam2 = (double) ageSum2 / team2.length;
+        System.out.println("Середній вік гравців 2 команди: " + averageAgeTeam2);
 
     }
 }
