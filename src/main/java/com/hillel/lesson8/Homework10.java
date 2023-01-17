@@ -11,12 +11,12 @@ public class Homework10 {
         int n = 0;
 
         Scanner scanner = new Scanner(System.in);
+
         System.out.println("Enter number of rows:");
         if(scanner.hasNextInt()) {
                 m = scanner.nextInt();
                 scanner.nextLine();
-            }
-
+        }
         System.out.println("Enter number of columns:");
         if(scanner.hasNextInt()) {
             n = scanner.nextInt();
