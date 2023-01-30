@@ -10,6 +10,7 @@ public class Main {
         user1.printAccountInfo();
         user2.printAccountInfo();
         user3.printAccountInfo();
+
         System.out.println();
         System.out.println("Changed data is marked with asterisk");
 

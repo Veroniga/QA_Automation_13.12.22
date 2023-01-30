@@ -92,6 +92,4 @@ public class FitnessTracker {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-
-
 }
