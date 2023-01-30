@@ -1,26 +1,24 @@
 package com.hillel.homework14;
 
-
-//Зробіть програму для фітнес трекера, яка реєструватиме нового користувача створюючи йому обліковий запис, приймаючи наступні параметри:
-//        Незмінні (задаються тільки при створенні облікового запису, і можуть бути отримані лише за допомогою гетерів):
-//        Ім'я
-//        Дата народження (окремо день, місяць, рік)
-//        Емейл
-//        Телефон
-//        Змінювані:
-//        Прізвище
-//        Вага
-//        Тиск
-//        Кількість пройдених за день кроків
-//        Створювати кожного користувача необхідно через конструктор, беручи всі поля на вхід конструктора.
-//        Додати метод printAccountInfo(), при виклику якого друкувати всі дані про користувача
-//        Після прийому року народження - вираховувати вік користувача у внутрішню змінну age,
-//        на яку зробити тільки геттер і виводити на екран разом з іншими полями в методі printAccountInfo();
-//        у конструкторі або геттерах/сеттерах не використовуємо виведення в консоль.
-//        У main-класі створити 3-5 користувачів та роздрукувати дані кожного через виклик методу printAccountInfo();
-//        для двох користувачів змінити кілька полів та роздрукувати нові дані повторно
 public class Main {
     public static void main(String[] args) {
 
+        FitnessTracker user1 = new FitnessTracker("Jack", 14,3,1981, "jack@ukr.net","380637436523","Nikolson", 86, 135, 9500);
+        FitnessTracker user2 = new FitnessTracker("Tom", 25,7,1983, "tom@ukr.net","380502236521","Cruz", 91, 116, 17900);
+        FitnessTracker user3 = new FitnessTracker("Adam", 19,9,1985, "adam@ukr.net","380639493993","Sandler", 97, 123, 11100);
+
+        user1.printAccountInfo();
+        user2.printAccountInfo();
+        user3.printAccountInfo();
+        System.out.println();
+        System.out.println("Changed data is marked with asterisk");
+
+        user1.setEmail("jack@gmail.com *");
+        user2.setName("Valera *");
+        user2.setPhoneNumber("380487348778 *");
+
+        user1.printAccountInfo();
+        user2.printAccountInfo();
+        user3.printAccountInfo();
     }
 }
