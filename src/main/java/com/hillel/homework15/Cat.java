@@ -31,20 +31,27 @@ public class Cat {
         }
 
         public void setName(String name) {
+            if(name.isEmpty()){
+                System.out.println("Name is required");
+            } else
             this.name = name;
+            System.out.println("Cat's name is: " + name);
+
         }
 
         public void setAge(int age) {
-            if(age > 0){
-                this.age = age;
+            if(age <= 0){
+                System.out.println("Age can not be zero or less");
             } else
-                System.out.println("dfgdfg");
+                this.age = age;
+                System.out.println("Cat's age is: " + age);
         }
 
         public void setWeight(int weight) {
-            this.weight = weight;
+            if(weight <= 0){
+                System.out.println("Weight can not be zero or less");
+            } else
+                this.weight = weight;
+                System.out.println("Cat's weight is: " + weight);
         }
-
-
-    //   if(weight <= 0)
 }
