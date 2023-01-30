@@ -11,12 +11,12 @@ public class Main {
         user2.printAccountInfo();
         user3.printAccountInfo();
 
+        System.out.println("Data for some users has been changed recently: ");
         System.out.println();
-        System.out.println("Changed data is marked with asterisk");
 
-        user1.setEmail("jack@gmail.com *");
-        user2.setName("Valera *");
-        user2.setPhoneNumber("380487348778 *");
+        user1.setEmail("jack@gmail.com");
+        user2.setName("Valera");
+        user2.setPhoneNumber("380488888778");
 
         user1.printAccountInfo();
         user2.printAccountInfo();
