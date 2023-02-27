@@ -1,32 +1,58 @@
 package com.hillel.homework17;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class ProductMarket {
-    private String title;
-    private int price;
-
-    public ProductMarket(String title, int price) {
-        this.title = title;
-        this.price = price;
+    private List<Product> products;
+    public ProductMarket(List<Product> products) {
+        this.products = products;
     }
-
-    public String getTitle() {
-        return title;
+    public List<String> getName(){
+        List<String> name = new ArrayList<>();
+        for(Product p : products){
+            name.add(p.getName());
+        }
+        System.out.println(name);
+        return name;
     }
-
-    public void setTitle(String title) {
-        this.title = title;
+    public List<String> getNameByAlphabet(){
+        List<String> getNameByAlphabet = new ArrayList<>();
+        for(Product p : products){
+            getNameByAlphabet.add(p.getName());
+        }
+        Collections.sort(getNameByAlphabet);
+        System.out.println(getNameByAlphabet);
+        return getNameByAlphabet;
     }
-
-    public int getPrice() {
-        return price;
+//    Вернуть все цены больше 10
+    public List<Integer> priceMoreThan10(){
+        List<Integer> priceMoreThan10 = new ArrayList<>();
+        for (Product p : products) {
+            if (p.getPrice() > 10) {
+                priceMoreThan10.add(p.getPrice());
+            }
+        }
+        System.out.println(priceMoreThan10);
+        return priceMoreThan10;
+        }
+    public List<Integer> priceLessThan5(){
+        List<Integer> priceLessThan5 = new ArrayList<>();
+        for (Product p : products) {
+            if (p.getPrice() < 5) {
+                priceLessThan5.add(p.getPrice());
+            }
+        }
+        System.out.println(priceLessThan5);
+        return priceLessThan5;
     }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    @Override
-    public String toString(){
-        return  "the price of " + getTitle() + " is " + getPrice();
+    public List<String> pricesString(){
+        List<String> pricesString = new ArrayList<>();
+        for(Product p : products){
+            pricesString.add(Integer.toString(p.getPrice()));
+        }
+        System.out.println(pricesString);
+        return pricesString;
     }
 }
