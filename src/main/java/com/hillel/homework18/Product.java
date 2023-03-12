@@ -1,6 +1,7 @@
 package com.hillel.homework18;
 
 public class Product {
+
     private String name;
     private int price;
     public Product(String name, int price) {

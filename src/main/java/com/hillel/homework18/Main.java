@@ -20,14 +20,9 @@ public class Main {
         ProductMarket productMarket = new ProductMarket(list);
 
         productMarket.getProductName();
+        productMarket.getNameByAlphabet();
         productMarket.getPriceMoreThan10();
         productMarket.getPriceLessThan5();
-//        productMarket.getNameByAlphabet();
-//        productMarket.pricesString();
-
-
-       
-
-
+        productMarket.pricesString();
     }
 }
