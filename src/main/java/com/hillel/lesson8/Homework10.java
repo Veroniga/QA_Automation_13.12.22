@@ -7,22 +7,10 @@ import java.util.Scanner;
 public class Homework10 {
     public static void main(String[] args) {
 
-        int m = 0;
-        int n = 0;
-
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter number of rows:");
-        if(scanner.hasNextInt()) {
-                m = scanner.nextInt();
-                scanner.nextLine();
-        }
-        System.out.println("Enter number of columns:");
-        if(scanner.hasNextInt()) {
-            n = scanner.nextInt();
-            scanner.nextLine();
-        }
-        System.out.println();
+        int m = valueForArr(scanner, "rows");
+        int n = valueForArr(scanner, "columns");
 
         int [][] array1 = new int [m][n];
 
@@ -31,7 +19,6 @@ public class Homework10 {
                 array1[i][j] = (int) (Math.random() * 101);
             }
         }
-
         System.out.println("Before:");
         for (int i = 0; i < array1.length; i++) {
             for (int j = 0; j < array1[i].length; j++) {
@@ -57,6 +44,23 @@ public class Homework10 {
             }
             System.out.println();
         }
-
    }
+
+    public static int valueForArr(Scanner scanner, String str){
+        System.out.println("Enter number of " + str);
+        while (true) {
+            if (scanner.hasNextInt()) {
+                int value = scanner.nextInt();
+                scanner.nextLine();
+                if (value < 0) {
+                    System.out.println("Only positive number can be entered, try again");
+                } else {
+                    return value;
+                }
+            } else {
+                System.out.println("Wrong data, only number is possible");
+                scanner.nextLine();
+            }
+        }
+    }
 }
