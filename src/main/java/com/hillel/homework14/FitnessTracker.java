@@ -18,7 +18,7 @@ public class FitnessTracker {
         this.birthDay = birthDay;
         this.birthMonth = birthMonth;
         this.birthYear = birthYear;
-        this.age = 2023 - birthYear;
+        this.age = getAge();
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.surname = surname;
