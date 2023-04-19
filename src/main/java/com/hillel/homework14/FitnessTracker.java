@@ -13,7 +13,7 @@ public class FitnessTracker {
     private int steps;
     private int age;
 
-    public FitnessTracker(String name, int birthDay, int birthMonth, int birthYear, int age, String email, String phoneNumber, String surname, int weight, int pressure, int steps){
+    public FitnessTracker(String name, int birthDay, int birthMonth, int birthYear, String email, String phoneNumber, String surname, int weight, int pressure, int steps){
         this.name = name;
         this.birthDay = birthDay;
         this.birthMonth = birthMonth;
